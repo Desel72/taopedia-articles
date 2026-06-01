@@ -1,0 +1,92 @@
+---
+title: "Root Subnet"
+summary:
+  "How Bittensor's Root Subnet, also called Subnet Zero, gives TAO stakers subnet-agnostic validator
+  exposure without miners or validation work of its own."
+category: "Core Concepts"
+tags: ["Staking", "Subnets"]
+infoboxTitle: Root Subnet
+infoboxCaption: Subnet Zero context for TAO staking.
+infoboxRows:
+  - label: Also called
+    value: Subnet Zero
+  - label: Miners
+    value: None
+  - label: Validators
+    value: Can register
+  - label: Stake asset
+    value: TAO
+---
+
+# Root Subnet
+
+The Root Subnet is Bittensor's Subnet Zero. The
+[Glossary: Root Subnet/Subnet Zero](https://docs.learnbittensor.org/resources/glossary#root-subnetsubnet-zero)
+entry describes it as a special subnet where no miners can register and no validation work is
+performed, while validators can register and TAO holders can stake to them.
+
+## What Makes It Different
+
+Ordinary subnets define work for miners, evaluation by validators, and subnet-specific alpha-token
+context. The Root Subnet is different: it does not host miner work or perform validation for a
+subnet task. Its role is to provide a TAO staking context that is not tied to one specific subnet's
+alpha token.
+
+The official
+[Understanding Subnets](https://docs.learnbittensor.org/subnets/understanding-subnets#root-subnet)
+page describes the Root Subnet as the only subnet without its own alpha currency and explains that
+validators can register there even though miners cannot.
+
+References:
+[Glossary: Root Subnet/Subnet Zero](https://docs.learnbittensor.org/resources/glossary#root-subnetsubnet-zero),
+[Understanding Subnets: Root subnet](https://docs.learnbittensor.org/subnets/understanding-subnets#root-subnet)
+
+## TAO Staking Context
+
+The Root Subnet gives TAO holders a way to stake to validators in a subnet-agnostic way. In that
+context, the staker is not selecting one subnet's alpha-token exposure as the only frame for the
+stake. Instead, the stake is associated with validators whose network performance can span multiple
+subnets.
+
+The official
+[Root Claim overview](https://docs.learnbittensor.org/staking-and-delegation/root-claims) places
+this in dividend terms: stakers who stake to validators on the Root Subnet can choose whether their
+staking dividends accumulate as alpha or are converted immediately to TAO.
+
+References:
+[Glossary: Root Subnet/Subnet Zero](https://docs.learnbittensor.org/resources/glossary#root-subnetsubnet-zero),
+[Root Claim overview](https://docs.learnbittensor.org/staking-and-delegation/root-claims)
+
+## Relationship to Stake Weight
+
+Root Subnet stake affects how validator stake is interpreted across Bittensor. The official glossary
+says validator weight in a subnet includes both the validator's share of that subnet's alpha and the
+validator's share of staked TAO in Subnet Zero. This is why Root Subnet context often appears near
+TAO weight, stake weight, and root proportion discussions.
+
+The important boundary is that Root Subnet stake is TAO-denominated. It is not the same as alpha
+stake inside an ordinary subnet.
+
+References:
+[Glossary: Root Subnet/Subnet Zero](https://docs.learnbittensor.org/resources/glossary#root-subnetsubnet-zero),
+[Glossary: TAO Weight](https://docs.learnbittensor.org/resources/glossary#tao-weight),
+[Glossary: Root Proportion](https://docs.learnbittensor.org/resources/glossary#root-proportion)
+
+## Reader Boundary
+
+Root Subnet is not a separate miner marketplace and should not be read as a numbered subnet article
+about a subnet team or product. It is a protocol-level staking and emissions context. Claims about
+current validator performance, dividend mode, or live balances need current network data and
+official staking references.
+
+References:
+[Understanding Subnets: Root subnet](https://docs.learnbittensor.org/subnets/understanding-subnets#root-subnet),
+[Root Claim overview](https://docs.learnbittensor.org/staking-and-delegation/root-claims)
+
+## Further Reading
+
+- [Glossary: Root Subnet/Subnet Zero](https://docs.learnbittensor.org/resources/glossary#root-subnetsubnet-zero)
+- [Understanding Subnets: Root subnet](https://docs.learnbittensor.org/subnets/understanding-subnets#root-subnet)
+- [Root Claim overview](https://docs.learnbittensor.org/staking-and-delegation/root-claims)
+- [Glossary: TAO Weight](https://docs.learnbittensor.org/resources/glossary#tao-weight)
+- [Glossary: Root Proportion](https://docs.learnbittensor.org/resources/glossary#root-proportion)
